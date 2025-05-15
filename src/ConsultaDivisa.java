@@ -8,8 +8,8 @@ import java.net.http.HttpResponse;
 
 public class ConsultaDivisa {
 
-    private static final String API_KEY = "9a090c087736c346bb0e41bb"; // Clave API
-    private static final String API_BASE_URL = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/pair/";
+
+    private static final String API_BASE_URL = "https://v6.exchangerate-api.com/v6/" + ClaveApi.API_KEY + "/pair/";
 
     public Divisa buscaDivisa(String codigoDivisaBase, String codigoDivisaDestino, double valorAConvertir){
 

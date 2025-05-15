@@ -5,7 +5,6 @@ public class Main {
         Scanner scannerPrincipal = new Scanner(System.in);
         ConsultaDivisa consulta = new ConsultaDivisa();
 
-
         System.out.println(Constantes.INICIO);
 
 
