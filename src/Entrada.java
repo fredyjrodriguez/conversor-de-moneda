@@ -1,5 +1,7 @@
 public class Entrada {
-    String entrada;
+
+
+
 
     public boolean validarEntrada(String entrada){
         if (entrada == null || entrada.length() != 3) {

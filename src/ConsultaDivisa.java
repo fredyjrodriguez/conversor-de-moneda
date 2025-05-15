@@ -9,10 +9,11 @@ import java.net.http.HttpResponse;
 public class ConsultaDivisa {
 
     private static final String API_KEY = "9a090c087736c346bb0e41bb"; // Clave API
-    private static final String API_BASE_URL = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/latest/";
+    private static final String API_BASE_URL = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/pair/";
 
-    public Divisa buscaDivisa(String codigoDivisaBase){
-        URI direccion = URI.create(API_BASE_URL + codigoDivisaBase.toUpperCase());
+    public Divisa buscaDivisa(String codigoDivisaBase, String codigoDivisaDestino, double valorAConvertir){
+
+        URI direccion = URI.create(API_BASE_URL + codigoDivisaBase.toUpperCase() + "/"+ codigoDivisaDestino.toUpperCase() + "/" + valorAConvertir);
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
