@@ -1,8 +1,4 @@
 public class Entrada {
-
-
-
-
     public boolean validarEntrada(String entrada){
         if (entrada == null || entrada.length() != 3) {
             return false;
